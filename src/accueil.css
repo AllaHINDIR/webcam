@@ -1,0 +1,93 @@
+.accueil {
+    text-align: center;
+    font-family: cursive;
+    /* background-color: red; */
+    height: 300px;
+    width: 900px;
+    padding: 30px;
+    margin-top: 100px;
+  }
+
+.glow {
+    font-size: 80px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    position: absolute;
+    animation: mymove 2s infinite,glow 1s ease-in-out infinite alternate;
+    margin: 0 auto;
+    /* background-color: royalblue; */
+    margin-left: 160px;
+    height: 300px;
+
+
+}
+
+/* @keyframes mymove
+{
+0%   {top:0px;}
+25%  {top:100px;}
+50%  {top:50px;}
+75%  {top:100px;}
+100% {top:0px;}
+}  */
+  
+@keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e65400, 0 0 40px #e65400, 0 0 50px #e65400, 0 0 60px #e65400, 0 0 70px #e65400;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff361b, 0 0 40px #ff361b, 0 0 50px #ff361b, 0 0 60px #ff361b, 0 0 70px #ff361b, 0 0 80px #ff361b;
+    }
+}
+
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  display: inline-block;
+  margin: 20px;
+  border-radius: 20px;
+  padding: 20px;
+  
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: rgb(247, 108, 74);
+  color: white;
+  transform: rotateY(180deg);
+}
