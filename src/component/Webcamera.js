@@ -60,7 +60,7 @@ export const WebcamCapture = () => {
                         // console.log(file2)
                         formData.append('file_b', file2)
                         var t0 = performance.now();
-                        axios.post('http://127.0.0.1:5000/swap_image', formData)
+                        axios.post('http://127.0.0.1:5001/swap_image', formData)
                             .then(function (response, data) {
                                 data = response.data;
                                 //console.log(data.filedata)
@@ -104,7 +104,7 @@ export const WebcamCapture = () => {
                 //console.log(formData.length)
                 //console.log(formData.values())
                 var t0 = performance.now();
-                axios.post('http://127.0.0.1:5001/upload', formData)
+                axios.post('http://127.0.0.1:5002/upload', formData)
                     .then(function (response, data) {
                         data = response.data;
                         //console.log(data.filedata)

@@ -4,8 +4,8 @@ Nav,
 NavLink,
 NavMenu,
 } from './NavbarElements';
-import { AiFillHome,AiFillVideoCamera,AiFillFileImage } from "react-icons/ai";
-import { FaImage,FaVideo,FaFileVideo } from "react-icons/fa";
+import { AiFillHome,AiFillFileImage } from "react-icons/ai";
+import { FaFileVideo } from "react-icons/fa";
 
 
 const Navbar = () => {
@@ -28,5 +28,6 @@ return (
 	</>
 );
 };
+
 
 export default Navbar;

@@ -3,18 +3,31 @@
     padding: 10px 10px;
     text-align: center;
     margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+.parent > * { border: 2px solid rgb(0, 0, 0);
+            margin: 2px;
+            padding: 2px;
+
+}
+
+
 .webcam-vdo{
     border-radius: 20px 70px;
     background: #ecb49a;
     padding: 20px;
-    display: inline-block;
+    
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin: 10px;
-    height:700px;
+    height:800px;
     width:700px;
     padding: 1rem 1rem;
-    vertical-align: middle;
+   
+   
+}
+.webcam-vdo-record{
+    
 }
 .webcam-btn-vdo{
     background-color: #f3804b; 
@@ -51,4 +64,25 @@
 }
 .delete:hover{
     color: red;
+}
+.webcam-elm{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 30px;
+}
+.webcam-vdo-generated{
+    border-radius: 20px 70px;
+    background: #ecb49a;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 20px;
+    margin-top: 70px;
+
+}
+.loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.erreur{
+    color: red;  
 }
