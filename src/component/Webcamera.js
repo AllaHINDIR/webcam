@@ -154,9 +154,8 @@ export const WebcamCapture = () => {
 
                             </div>
                             <div>
-                                {erreur != '' ?
-                                    <div><a className="erreur">No photos merged : {erreur}</a></div> :
-                                    <div></div>
+                                {erreur != '' &&
+                                    <div><a className="erreur">No photos merged : {erreur}</a></div> 
                                 }
                             </div>
                         </div> :
@@ -180,7 +179,14 @@ export const WebcamCapture = () => {
                             <div >
                                 {done ?
                                     <div><img className="image" src="https://cpatheatricals.org/wp-content/uploads/2015/10/who-is.jpg"></img>
-                                        <div><a className="nameCelebrity">A qui vous ressemnblez?</a></div></div>
+                                        <div><a className="nameCelebrity">A qui vous ressemnblez?</a></div>
+                                        <div>
+                                            {erreur != '' &&
+                                                <div><a className="erreur">Error : {erreur}</a></div>
+                                            }
+                                        </div>
+                                    </div>
+                                        
                                     :
                                     <div>
                                         <div style={{ marginBottom: "1cm" }}><a className="nameCelebrity">Patientez</a></div>
@@ -278,10 +284,12 @@ export const WebcamCapture = () => {
                             :
                             <div>
                                 <button onClick={(e) => {
+                                    setError('')
                                     setDone(false);
                                     setnameCelebrity('')
                                     setimageCelebrity('')
                                     uploadHandler()
+
                                 }} className="webcam-btn">Send Image</button>
                                 <button onClick={(e) => {
                                     e.preventDefault();
