@@ -3,6 +3,8 @@
 Ce projet est le frontend d'une application qui permet à l'utilisteur de connaitre la célébrité à laquelle il ressemble.
 De plus, elle lui permet de faire une video "deepfake" en remplaçant son visage par celui de la célébrité.
 
+<img src="/public/capture.jpg">
+
 ## Téchnologies 
 
 Ce projet est développé par ReactJs. Du coup, si vous voulez le faire tourner après l'importation il suffit d'executer les commandes suivantes:
