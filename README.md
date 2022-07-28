@@ -6,6 +6,19 @@ De plus, elle lui permet de faire une video "deepfake" en remplaçant son visage
 <img src="/public/capture.jpg">
 
 
+## Test avec image
+
+https://user-images.githubusercontent.com/66624222/181551589-f2d4eb99-5c59-4c5a-8f86-dcf6ab9cc986.mp4
+
+
+
+https://user-images.githubusercontent.com/66624222/181560621-e5ae70eb-8e62-4bee-a605-b79c094f576b.mp4
+
+
+
+https://user-images.githubusercontent.com/66624222/181564460-ac548284-e2ab-44a1-8466-09c9788e39f0.mp4
+
+## Test avec vidéo
 
 https://user-images.githubusercontent.com/66624222/181518042-d66286d3-95e7-48f1-8862-1b6785345423.mp4
 
