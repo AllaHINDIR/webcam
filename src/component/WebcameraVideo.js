@@ -84,7 +84,7 @@ function RecordVideo(props) {
     };
 
     const chargeImages = () =>{
-        axios.get('http://localhost:5001/imageCelebrity')
+        axios.get('http://localhost:5000/imageCelebrity')
             .then(res => {
                 setListImage(res.data.list)
             }).catch(function(err){

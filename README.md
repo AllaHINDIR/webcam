@@ -4,6 +4,7 @@ Ce projet est le frontend d'une application qui permet à l'utilisteur de connai
 De plus, elle lui permet de faire une video "deepfake" en remplaçant son visage par celui de la célébrité.
 
 <img src="/public/capture.jpg">
+<video src="\public\video_test_avec_video_image_animation.mp4">
 
 ## Téchnologies 
 
